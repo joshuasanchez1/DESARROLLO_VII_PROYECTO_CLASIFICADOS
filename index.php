@@ -10,6 +10,8 @@ define('BASE_PATH', __DIR__ . '/');
 // Include the configuration file
 require_once BASE_PATH . 'config.php';
 
+echo "hello world tercero";
+
 // Include necessary files
 require_once BASE_PATH . 'src/Database.php';
 require_once BASE_PATH . 'src/TaskManager.php';
