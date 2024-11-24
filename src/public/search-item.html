@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="site.css" />
+    <title>Takeaway</title>
+  </head>
+
+  <body>
+    <!-- navegation bar-->
+        <nav class="flex-div">
+            <div class="nav-left flex-div">
+                <a href="index.html">
+                    <img src="../images/logo.png" class="logo" />
+                </a>
+            </div>
+
+            <!-- login -->
+            <div class="nav-right flex-div"> 
+                <img src="image/upload.png" class="upload-icon" id="upload-icon"/>
+                <img src="image/registerUser.png" class="user-icon" id="user-icon"></img>
+            </div>
+
+            <!-- Popup login -->  
+            <div class="popup" id="popup">
+                <div class="popup-emergente">
+                    <span class="cerrar" id="cerrarPopup">&times;</span>
+                    <form class="form-login">
+                        <div class="form-group">
+                            <label for="user">User</label>
+                            <input type="text" id="user" name="user" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required/>
+                        </div>
+
+                        <div class="button-group">
+                            <button type="submit" id="singup">SignUp</button>
+                            <button type="submit" id="login">Login</button>
+                        </div>
+                   </form>
+                </div>
+            </div>
+
+            <!-- Popup upload-->
+            <div class="popup-upload" id="popup-upload">
+                <div class="popup-emergente">
+                    <span class="cerrar" id="cerrarPopupUpload">&times;</span> 
+                    <form class="form-login">
+                        <div class="form-group">
+                            <label for="Titulo">Titulo</label>
+                            <input type="Titulo" id="Titulo" name="Titulo" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Descripcion">Descripcion</label>
+                            <input type="Descripcion" id="Descripcion" name="Descripcion" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="file" id="file" name="file" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <!--Sidebar-->
+        <div class="sidebar">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categorías</a>
+                    <div class="dropdown-content">
+                        <div class="checkbox-group">
+                            <label for="dispositivos">Dispositivos Electrónicos</label>
+                            <input type="checkbox" id="dispositivos" name="dispositivos"><br>
+        
+                            <label for="Accesorios">Accesorios</label>
+                            <input type="checkbox" id="Accesorios" name="Accesorios"><br>
+            
+                            <label for="Computadoras">Computadoras</label>
+                            <input type="checkbox" id="Computadoras" name="Computadoras"><br>
+            
+                            <label for="Telefonos">Teléfonos celulares</label>
+                            <input type="checkbox" id="Telefonos" name="Telefonos"><br>
+                            
+                            <label for="Tiendas">Tiendas & Servicios</label>
+                            <input type="checkbox" id="Tiendas" name="Tiendas"><br>
+                        </div>
+                    </div>
+                </li>
+        
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Precio</a>
+                    <div class="dropdown-price">
+                        <div class="checkbox-group">
+                            <input type="text" id="min-price" name="min-price" placeholder="Min"><br>
+                            <input type="text" id="max-price" name="max-price" placeholder="Max"><br>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">  
+                    <a href="Chat.html" class="dropbtn">Chat</a> 
+                </li>
+                <li class ="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Estado</a>
+                    <div class="dropdown-content">
+                        <div class="checkbox-group">
+                            <label for="Nuevo">Usado</label>
+                            <input type="checkbox" id="Nuevo" name="Nuevo"><br>
+        
+                            <label for="Nuevo">Nuevo</label>
+                            <input type="checkbox" id="Nuevo" name="Nuevo"><br>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--Desing-->
+        <div class="product-grid">
+            <div class="product-card">
+              <img src="product1.jpg" alt="Product 1">
+              <h3>Product Title 1</h3>
+              <p class="price">$100</p>
+              <p class="description">Short description of the product.</p>
+              <button>View More</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="product2.jpg" alt="Product 2">
+              <h3>Product Title 2</h3>
+              <p class="price">$150</p>
+              <p class="description">Short description of the product.</p>
+              <button>View More</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="product3.jpg" alt="Product 3">
+              <h3>Product Title 3</h3>
+              <p class="price">$200</p>
+              <p class="description">Short description of the product.</p>
+              <button>View More</button>
+            </div>
+          
+            <!-- Repeat .product-card for more items -->
+        </div>
+          
+  </body>
+  
+  <script type="module" src="JS/login.js"></script>
+  <script type="module" src="JS/upload.js"></script>
+        
+
+
+       
